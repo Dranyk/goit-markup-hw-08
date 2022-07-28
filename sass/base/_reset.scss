@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    background-color: white;
+    color: var(--primary-text-color);
+    font-family: $Primary-font;
+    letter-spacing: 0.03em;
+    }
+
+.section {
+    padding-top: 94px;
+    }
+    
+.section-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        color: var(--title-text-color);
+        font-family: $Primary-font;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+    }
+
+button {
+    cursor: pointer;
+  }
+

@@ -1,0 +1,147 @@
+address {
+    font-style: normal;
+ }
+
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1200px;
+}
+
+.footer__actual-address {
+    color: white;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.footer__contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.footer__contact-list .footer__item + .footer__item {
+    margin-top: 9px;
+}
+
+.footer__contact-list a {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
+}
+
+
+
+.join__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.join__icon {
+    fill: currentColor;
+}
+
+.join__link {
+    @extend %align-list;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+}
+.join__item:not(:last-child) {
+    width: calc((100% - 3 * 10px) / 4);
+    margin-right: 10px;
+}
+
+.subscription {
+    width: 570px;
+}
+
+.subscription__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.subscription__join-in {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subscription__mail {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding-left: 12px;
+    color: var(--primary-text-color);
+}
+
+.subscription__button {
+    @extend %align-list;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    justify-content: left;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    overflow: hidden;
+    border: 0em;
+}
+
+.subscription__icon {
+    position: absolute;
+    right: 18px;
+    margin-left: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+}

@@ -1,0 +1,34 @@
+.button {
+    display: inline-block;
+    border-radius: 4px;
+   
+    color: white;
+    background-color: var(--accent-color);
+    font-family: $Primary-font;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.hero__button {
+    min-width: 200px;
+    padding: 10px 32px;
+
+    border: none;
+    color: white;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.button.secondary {
+
+    padding: 6px 22px;
+
+    color: var(--title-text-color);
+    background-color: var(--secondary-light-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+   }

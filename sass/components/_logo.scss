@@ -1,0 +1,30 @@
+.main-nav__logo {
+    font-family: $Secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    color: #000000;
+    margin-right: 93px;
+}
+
+.main-nav__accent {
+    color: var(--accent-color);
+}
+
+.footer__logo {
+    font-family: $Secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__accent {
+    color: var(--accent-color);
+}
