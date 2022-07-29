@@ -15,14 +15,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 body {
   background-color: white;
   color: var(--primary-text-color);
@@ -31,7 +23,12 @@ body {
 }
 
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 94px;
+  }
 }
 
 .section-title {
@@ -40,13 +37,42 @@ body {
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.14;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 button {
   cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .subscription__button, .join__link, .modal__field-polisy, .modal__close-icon, .modal__close-button, .client-list__link, .social-team__link, .work-list__cont, .feature-list__icon, .contact-nav__contact, .main-nav {
@@ -218,24 +244,61 @@ nav {
   line-height: 1.6;
 }
 
-.feature-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .feature-list__item {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    width: 270px;
+  }
 }
 
 .feature-list__icon {
   justify-content: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-light-color);
 }
+@media screen and (min-width: 768px) {
+  .feature-list__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__icon {
+    width: 270px;
+  }
+}
 
-.feature-list__item + .feature-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .feature-list__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list__item + .feature-list__item {
+    margin-left: 30px;
+  }
 }
 
 .feature-list__title {
@@ -246,6 +309,11 @@ nav {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__text {
@@ -295,18 +363,47 @@ nav {
   padding-bottom: 94px;
 }
 
-.team-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }
 
-.team-list__item + .team-list__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .team-list__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item + .team-list__item {
+    margin-left: 30px;
+  }
 }
 
 .team-list__item {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: 270px;
+    margin-bottom: 0px;
+  }
 }
 
 .team-list__title {
@@ -338,8 +435,20 @@ nav {
 }
 
 .social-team {
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 122px;
+  padding-left: 122px;
+}
+@media screen and (min-width: 768px) {
+  .social-team {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-team {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
 .social-team > li:not(:last-child) {
