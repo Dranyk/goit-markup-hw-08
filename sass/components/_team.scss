@@ -90,8 +90,11 @@
 }
 
 .social-team > li:not(:last-child) {
-    width: calc((100% - 3 * 10px) / 4);
-    margin-right: 10px;
+    
+        width: calc((100% - 3 * 10px) / 4);
+        margin-right: 10px;
+    
+
 }
 
 .social-team__link {
