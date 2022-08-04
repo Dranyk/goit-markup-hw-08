@@ -6,11 +6,12 @@
     text-decoration: none;
     
     color: #000000;
-    margin-right: 93px;
+    margin-right: 84px;
 
     @include desk {
         font-size: 26px;
         line-height: 1.19;
+        margin-right: 93px;
     }
 }
 
