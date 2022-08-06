@@ -9,22 +9,8 @@ address {
 }
 
 .footer-container {
-    display: block;
-text-align: center;
-    @include tab {
-        display: flex;
-        align-items: baseline;
-    }
-
-}
-
-.footer__adress {
-    @include tab {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
-    width: 1200px;
-    }
 }
 
 .footer__actual-address {
@@ -39,12 +25,6 @@ text-align: center;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
-}
-
-.footer__contact-list {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
-    }
 }
 
 .footer__contact-list .footer__item + .footer__item {
@@ -73,17 +53,7 @@ text-align: center;
 }
 
 .join {
-    width: 206px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media screen and (max-width:767px) {
-        margin-bottom: 60px;
-    }
-
-    @include tab {
-        margin-left: 70px;
-    }
+    margin-left: 70px;
 }
 
 .join__icon {
@@ -115,24 +85,11 @@ text-align: center;
 }
 
 .subscription {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-    
-   @include tab {
-    width: 570px;
-    }
+    margin-left: 93px;
 }
 
 .subscription__form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @include tab {
-
-    flex-direction: column;
-    position: relative;
-    }
 }
 
 .subscription__join-in {
@@ -145,7 +102,7 @@ text-align: center;
 }
 
 .subscription__mail {
-    width: 100%;
+    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -154,16 +111,14 @@ text-align: center;
     padding-left: 12px;
     color: var(--primary-text-color);
 
-    @include tab {
-        width: 358px;
-    }
-
-
+    margin-right: 12px;
 }
 
 .subscription__button {
     @extend %align-list;
-
+    position: relative;
+    bottom: 0;
+    right: 0;
     width: 200px;
     height: 50px;
     justify-content: left;
@@ -174,29 +129,12 @@ text-align: center;
     padding-right: 28px;
     overflow: hidden;
     border: 0em;
-
-    @include tab {
-        display: flex;
-        bottom: 0;
-        right: 0;
-    }
-
-    @include desk {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    }
 }
 
 .subscription__icon {
-
+    position: absolute;
     right: 18px;
     margin-left: 10px;
     top: 50%;
     transform: translatey(-50%);
-
-    @include desk {
-    position: absolute;
-    }
 }
