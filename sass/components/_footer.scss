@@ -9,8 +9,20 @@ address {
 }
 
 .footer-container {
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @include tab {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: center;
+    }
+
+    @include desk {
+        flex-wrap: nowrap;
+    }
 }
 
 .footer__actual-address {
@@ -41,7 +53,14 @@ address {
 
 }
 
-
+.footer__contact-list {
+    margin-bottom: 60px;
+  
+    @include desk {
+        margin-bottom: 0;
+        
+    }
+}
 
 .join__text {
     font-weight: 700;
@@ -53,7 +72,19 @@ address {
 }
 
 .join {
-    margin-left: 70px;
+    width: 206px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tab {
+        margin-left: 165px;
+        margin-right: 0;
+    }
+
+    @include desk {
+        margin-left: 70px;
+    }
 }
 
 .join__icon {
@@ -85,11 +116,15 @@ address {
 }
 
 .subscription {
-    margin-left: 93px;
+    @include desk {
+        margin-left: 93px;
+    }
 }
 
 .subscription__form {
-    display: flex;
+    @include desk {
+        display: flex;
+    }
 }
 
 .subscription__join-in {
@@ -102,7 +137,7 @@ address {
 }
 
 .subscription__mail {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -112,6 +147,12 @@ address {
     color: var(--primary-text-color);
 
     margin-right: 12px;
+    margin-bottom: 20px;
+
+    @include desk {
+        width: 358px;
+        margin-bottom: 0;
+    }
 }
 
 .subscription__button {

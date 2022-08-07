@@ -52,12 +52,12 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 1200px;
+    // min-width: 1200px;
 }
 
 .portfolio-list__grid {
-    margin-right: 30px;
     margin-bottom: 30px;
+
     border-top: none;
     width: 100%;
 
@@ -69,16 +69,17 @@
     }
 
     @include tab {
-        width: calc(100% / 2 - 30px);
+        width: 354px;
+        margin-right: 30px;
     }
 
     @include desk {
-        width: calc(100% / 3 - 30px);
+        width: 370px;
     }
 }
 
 .portfolio-list__grid:nth-child(even) {
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (min-width:480px) and (max-width:1199px) {
         margin-right: 0;
     }
 }
@@ -100,6 +101,9 @@
 
 .portfolio-list img {
     margin-top: 0;
+    display: block;
+    max-width: 100%;
+    height: auto  
 }
 
 .portfolio-list__card-content {
@@ -150,8 +154,3 @@
     }
 }
 
-.grid-link img {
-    display: block;
-    max-width: 100%;
-    height: auto
-}
