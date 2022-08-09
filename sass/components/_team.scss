@@ -1,6 +1,9 @@
 .team {
     background-color: var(--secondary-light-color);
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    @include desk {
+        padding-bottom: 94px;
+    }
 }
 
 .team-list {
@@ -72,11 +75,11 @@
     display: flex;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .social-team {
-    padding-right: 122px;
-    padding-left: 122px;
+
     
     @include tab {
         padding-right: 74px;
@@ -90,11 +93,11 @@
 }
 
 .social-team > li:not(:last-child) {
-    
-        width: calc((100% - 3 * 10px) / 4);
-        margin-right: 10px;
-    
+    margin-right: 10px;
+}
 
+.social-team__item {
+    width: 44px;
 }
 
 .social-team__link {

@@ -1,4 +1,6 @@
 .feature-list {
+    padding-bottom: 60px;
+
     @media screen and (min-width:768px){
         display: flex;   
         flex-wrap: wrap;
@@ -6,6 +8,7 @@
     
     @media screen and (min-width:1200px){
         flex-wrap: nowrap;
+        padding-bottom: 0;
     }
 
 }
@@ -19,10 +22,22 @@
     }
 
     @include desk {
-        width: 270px;     
+        width: 270px;   
+        margin-bottom: 0;  
     }
 }
 
+.feature-list__item:last-child {
+@media screen and (max-width: 767px) {
+    margin-bottom: 0;      
+}
+}
+
+.feature-list__item:nth-last-child(-n + 2) {
+@include tab {
+    margin-bottom: 0;     
+}
+}
 
 .feature-list__icon {
     @extend %align-list;

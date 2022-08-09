@@ -1,5 +1,8 @@
 .client {
+    padding-bottom: 60px;
+    @include desk {
     padding-bottom: 94px;
+        }   
 }
 
 .client-list {
