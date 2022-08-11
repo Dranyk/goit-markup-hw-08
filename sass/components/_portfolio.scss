@@ -25,6 +25,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 40px;
+    gap: 8px;
+    row-gap: 15px;
 
     @include tab {
         flex-wrap:nowrap;
@@ -38,9 +40,9 @@
 
 }
 
-.filter-section__item:not(:last-child) {
-    margin-right: 8px;
-}
+// .filter-section__item:not(:last-child) {
+//     margin-right: 8px;
+// }
 
 .filter-section__item + .filter-section__item {
     @include tab {
@@ -141,7 +143,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
